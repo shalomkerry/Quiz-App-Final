@@ -3,7 +3,6 @@ import React,{useEffect, useMemo, useState} from "react";
 import useQuiz from "../services/triviaApi";
 import getQuestions from "../stores/getQuestions";
 import AnswerQuestion from "./Answer";
-import ShowResult from "./ShowResult";
 
 
 const QuizPage = ({ category, difficulty, number }) => {
