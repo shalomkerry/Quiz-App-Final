@@ -1,0 +1,373 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/*
+===========================
+RESET
+===========================
+*/
+
+*::after,
+*::before {
+box-sizing: border-box;
+}
+* {
+margin: 0;
+padding: 0;
+}
+body {
+line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+display: block;
+}
+input,
+button,
+textarea,
+select {
+font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+overflow-wrap: break-word;
+}
+/*
+=============================
+BACKGROUNDS and COMMONS
+=============================
+*/
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin:auto 0%;
+font-family: "metropolis";
+width: 100%;
+height: 100%;
+background-color: #4706E8;
+color:#ffff
+}
+
+
+/*
+=============================
+Mobile Design First -- First Page
+=============================
+*/
+
+.home{
+    display: flex;
+    margin-top: 5em;
+    padding: 0 1em;
+}
+
+h1{
+    font-size:5em;
+}
+.challenge__text{
+    font-size:2em;
+}
+.choice__text{
+    font-size:2em;
+}
+
+h1,.challenge__text{
+    padding-bottom: 0.4em;
+
+    text-align: center;
+}
+.choice{
+    margin: 1.2em 0;
+}
+.numberChoice>input{
+    height: 30px;
+    width:50px;
+  font-size: 2em; 
+   border: none; 
+   border-radius: 2px;
+  background-color:#f9f9f9; 
+  outline: none;
+}
+.numberChoice>input:hover{
+cursor: pointer;
+}
+form >button{
+    border:none;
+ width:120px;
+   background-color: #E8166A; 
+   color:#ffff;
+    font-size:2em;
+;
+   border-radius: 12px;
+   margin: 0 25%;
+
+}
+form>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.choice__text{
+    margin-bottom: 0.8em;
+}
+
+/*
+=============================
+Questions Page
+=============================
+*/
+.error__desktop{
+    width:500px;
+}
+.questionCount{
+    padding:0.4em;
+    font-size:2em;
+}
+.questionsBackground{
+margin: 50px 0;
+height:auto;
+min-height: 550px;
+width:300px;
+background-color: #220173;
+border-radius: 12px;
+}
+.answer-questions__card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 30px;
+}
+.answer-question__question{
+    font-size:1.34em;
+    width: auto;
+    margin-bottom: 1.2em;
+}
+.answer-question__container>li{
+   list-style-type:  none;
+    
+}
+.answer-question__container>li>button{
+    text-align: left;
+    font-size: 1.2em;; 
+    padding:0.3em;
+    text-align: center;
+    min-width:200px;
+    font-weight: 900;
+   margin-bottom:1em;
+    
+}
+.answer-question__container>li>button:hover{
+    cursor: pointer;
+}
+.home__button{
+    border:none;
+ width:120px;
+   background-color: #E8166A; 
+   color:#ffff;
+   font-size: 1.2em;
+   padding:0.5em;
+   border-radius: 12px;
+   margin: 1em 25%;
+    ;
+}
+.home__button:hover{
+    cursor:pointer
+}
+
+.questionMark{
+   display: none; 
+}
+
+/*
+=============================
+Results
+=============================
+*/
+.showingResult{
+    margin-top:4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resultBackground{
+    padding:0.8em;
+text-align: center;
+font-size:1.3em;
+width:140px;
+background-color: #220173;
+border-radius: 12px;
+margin-bottom: 1em;
+}
+
+.correctAnswer{
+    font-size:1.2em;
+    color:green;
+}
+.results{
+    font-size: 1.8em;
+}
+.resultOptionsButtons{
+    border:none;
+ width:220px;
+ padding:0.5em;
+ height: auto;
+   background-color: #E8166A; 
+   color:#ffff;
+   font-size: 1.5em;
+   border-radius: 12px;
+   margin: 0 25%;
+    ;
+}
+.resultOptionsButtons>a{
+text-decoration: none;
+color: white;
+
+}
+.resultOptionsButtons:hover{
+cursor: pointer;
+}
+/*
+===========================
+Answers Page
+===========================
+*/
+.showAnswerBackground{
+    padding:0.8em;
+text-align: center;
+font-size:1.3em;
+max-width:340px;
+width:auto;
+max-height:600px;
+height:auto;
+background-color: #220173;
+border-radius: 12px;
+margin-bottom: 1em;
+padding-top: 1em;
+}
+.showAnswersQuestion{
+    margin-bottom:1em;
+}
+.answer-question__answers>li{
+   list-style-type:  none;
+    
+}
+.answer-question__answers>li>button{
+    text-align: left;
+    width:200px;
+    height: auto;
+    padding-left:0.3em;
+    margin-bottom:1em;
+    border: none;
+    border-radius:5px;
+}
+.incorrectAnswer{
+    background-color: red;
+}
+.correctAnswerButton{
+    background-color: green;
+}
+.answer-question__answers__>li>button:hover{
+    cursor: not-allowed;
+}
+.resultAnswerContainer>button{
+    margin: 0 0 20px 0;
+    width:200px;
+    height: auto;
+}
+   .resultAnswerContainer{
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+   } 
+/*
+===========================
+For Bigger Screens
+===========================
+*/
+@media(min-width:1000px){
+
+/*
+===========================
+firstPage
+===========================
+*/
+/*
+===========================
+questionsPage
+===========================
+*/
+.answer-question__container>li>button{
+    padding:0;
+    width:200px;
+    min-height:60px;
+    font-size:1.5em;
+}
+.answer-question__container{
+    display: grid;
+   color:blue; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+.answer-question__question{
+    font-size:2em;
+}
+.questionsBackground{
+margin: 50px 0;
+height:auto;
+
+min-height: 350px;
+width:700px;
+background-color: #220173;
+border-radius: 12px;
+}
+.home__button{
+    width:300px;
+    padding:0.6em;
+    font-size:1.8em;
+    margin: 30px 30%;
+}
+
+.questionMarkContainer{
+    display: flex;
+    min-width: 100%;
+    max-width:80%;
+    align-items: center;
+    justify-content: center;
+}
+.questionMark{
+    display: block;
+    max-width: 100%;
+    width:300px;
+}
+/*
+===========================
+answerPage
+===========================
+*/
+.showAnswer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.resultAnswerContainer{
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   gap:1em
+}
+}
